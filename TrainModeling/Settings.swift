@@ -81,7 +81,9 @@ class Settings {
     }
     
     private func sortList(_ list: [(String, Float)]) -> [(String, Float)] {
-        return list.sorted { (a, b) -> Bool in { a.1 < b.1 }() }
+        return list.sorted { (a, b) -> Bool in
+            return a.1 < b.1
+        }
     }
 
     

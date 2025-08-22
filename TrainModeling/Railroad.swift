@@ -62,9 +62,8 @@ class Railroad {
     //MARK: - Other
     
     public func sortTrainsByStartTime() {
-        trains = trains.sorted { (t1, t2) -> Bool in {
+        trains = trains.sorted { (t1, t2) -> Bool in
             return t1.getStartAbsoluteTime() < t2.getStartAbsoluteTime()
-            }()
         }
     }
     

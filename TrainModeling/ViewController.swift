@@ -269,7 +269,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         
         // удаляем поезда которые добавили в массив activeTrains
-        for index in indices {
+        for index in indices.sorted(by: >) {
             trains.remove(at: index)
         }
         
@@ -286,7 +286,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         
         //удаляем поезда, которые достигли пунктов назначения
-        for index in indices {
+        for index in indices.sorted(by: >) {
             activeTrains.remove(at: index)
         }
         
